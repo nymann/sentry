@@ -42,12 +42,6 @@ ROOT = os.path.realpath(os.path.join(os.path.dirname(sys.modules["__main__"].__f
 # Add Sentry to path so we can import distutils
 sys.path.insert(0, os.path.join(ROOT, "src"))
 
-from sentry.utils.distutils import (
-    BuildAssetsCommand,
-    BuildIntegrationDocsCommand,
-    BuildJsSdkRegistryCommand,
-)
-
 # The version of sentry
 VERSION = "10.0.0.dev0"
 
